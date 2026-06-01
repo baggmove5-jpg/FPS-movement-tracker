@@ -1,0 +1,51 @@
+{
+  "camera": {
+    "device_id": 0,
+    "resolution": [1920, 1080],
+    "fps": 60,
+    "auto_focus": true
+  },
+  "color_ranges": {
+    "player_black": {
+      "lower": [0, 0, 0],
+      "upper": [50, 50, 50]
+    },
+    "player_red": {
+      "lower": [200, 0, 0],
+      "upper": [255, 100, 100]
+    },
+    "player_white": {
+      "lower": [200, 200, 200],
+      "upper": [255, 255, 255]
+    }
+  },
+  "motion_detection": {
+    "sensitivity": 10,
+    "min_motion_area": 100,
+    "optical_flow_method": "farneback"
+  },
+  "tracking": {
+    "max_tracking_distance": 50,
+    "smoothing_window": 5,
+    "enable_prediction": true
+  },
+  "recording": {
+    "output_directory": "output",
+    "save_video": true,
+    "save_json": true,
+    "save_pickle": true,
+    "video_codec": "mp4v"
+  },
+  "display": {
+    "show_grid": true,
+    "show_trajectory": true,
+    "show_vectors": true,
+    "show_hud": true,
+    "max_vector_display": 50
+  },
+  "analysis": {
+    "enable_real_time": true,
+    "enable_post_processing": true,
+    "generate_report": true
+  }
+}
